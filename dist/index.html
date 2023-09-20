@@ -4,38 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator app</title>
-    <script src="calculator.js" ></script>
-    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="style.css">
        </head>
 <body class="bg-white flex flex-col justify-center items-center h-screen">
-    <div class="headertext  mt-4 ">Simple and easy to use calculator</div>
+    <div class="headertext  mt-4 ">Simple and easy to use calculator
+        <div id="trydiv"></div>
+    </div>
     <div class="calculatorbox w-64  h-80 border-2 mt-5 bg-slate-50 ">
-        <div class="screenpanel w-72 h-28 "></div>
+        <div class="screenpanel w-64 h-28 bg-slate-400">
+            <div class="operationpanel"></div>
+            <div class="resultvaluepanel mt-8 "></div>
+        </div>
         <div class="buttons grid grid-cols-4 grid-flow-row [&>*]:bg-yellow-400 [&>*]:border-2 [&>*]:w-16 [&>*]:h-16">
-           <button class="C"><div class=" flex justify-center items-center  ">C</div></button>
-           <button class="%"><div class=" flex justify-center items-center" >%</div</button>>
-           <button class="/"><div class=" flex justify-center items-center">/</div></button>
-           <button class="X"><div class=" flex justify-center items-center">X</div></button>
-           <button class="7"><div class=" flex justify-center items-center">7</div></button>
-           <button class="8"><div class=" flex justify-center items-center">8</div></button>
-           <button class="9"><div class=" flex justify-center items-center">9</div></button>
-           <button class="*"><div class=" flex justify-center items-center">*</div></button>
-           <button class="4"> <div class=" flex justify-center items-center">4</div></button>
-           <button class="5"><div class=" flex justify-center items-center">5</div></button>
-           <button class="6"><div class=" flex justify-center items-center">6</div></button>
-           <button class="-"><div class=" flex justify-center items-center">-</div></button>
-           <button class="1"><div class=" flex justify-center items-center">1</div></button>
-           <button class="2"><div class=" flex justify-center items-center">2</div></button>
-           <button class="3"><div class=" flex justify-center items-center">3</div></button>
-           <button class="+"><div class=" flex justify-center items-center">+</div></button>
-           <button class="or"><div class=" flex justify-center items-center">+/-</div></button>
-           <button class="0"><div class=" flex justify-center items-center">0</div></button>
-           <button class="."><div class=" flex justify-center items-center">.</div></button>
-           <button class="="><div class=" flex justify-center items-center">=</div></button>
+           <button class="C btn flex justify-center items-center  ">C</button>
+           <button class="% btn flex numOp justify-center items-center" >%</button>
+           <button class="/ btn flex numOp justify-center items-center">/</button>
+           <button class="X btn flex numOp justify-center items-center">X</button>
+           <button class="7 numOp btn flex justify-center items-center">7</button>
+           <button class="8 numOp btn flex justify-center items-center">8</button>
+           <button class="9 numOp btn flex justify-center items-center">9</button>
+           <button class="* btn numOp flex justify-center items-center">*</button>
+           <button class="4 btn numOp flex justify-center items-center">4</button>
+           <button class="5 btn numOp flex justify-center items-center">5</button>
+           <button class="6 btn numOp flex justify-center items-center">6</button>
+           <button class="- btn numOp flex justify-center items-center">-</button>
+           <button class="1 btn numOp flex justify-center items-center">1</button>
+           <button class="2 btn numOp flex justify-center items-center">2</button>
+           <button class="3 btn numOp flex justify-center items-center">3</button>
+           <button class="+ btn numOp flex justify-center items-center">+</button>
+           <button class="or btn flex justify-center items-center">+/-</button>
+           <button class="0 btn numOp flex justify-center items-center">0</button>
+           <button class=". btn numOp flex  justify-center items-center">.</button>
+           <button id="equalsto" class="equalsto btn flex justify-center items-center">=</button>
+           
+
         </div>
 
 
     </div>
-
+    <script src="calculator.js"></script>
+   
 </body>
 </html>
